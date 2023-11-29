@@ -1,6 +1,6 @@
 ﻿namespace Quiet_Attic_Films_Production_Company
 {
-    partial class form_productionstaff
+    partial class frmproductionstaff
     {
         /// <summary>
         /// Required designer variable.
@@ -53,6 +53,7 @@
             this.dgvproductionstaff.RowTemplate.Height = 24;
             this.dgvproductionstaff.Size = new System.Drawing.Size(384, 204);
             this.dgvproductionstaff.TabIndex = 51;
+            this.dgvproductionstaff.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproductionstaff_CellDoubleClick);
             // 
             // panel1
             // 
@@ -104,6 +105,7 @@
             this.btnupdate.TabIndex = 4;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnnew
             // 
@@ -142,6 +144,7 @@
             this.btnsaave.TabIndex = 2;
             this.btnsaave.Text = "Save";
             this.btnsaave.UseVisualStyleBackColor = false;
+            this.btnsaave.Click += new System.EventHandler(this.btnsaave_Click);
             // 
             // cmbproductionid
             // 
@@ -171,7 +174,7 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "Staff Id";
             // 
-            // form_productionstaff
+            // frmproductionstaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +190,7 @@
             this.Controls.Add(this.btnnew);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnsaave);
-            this.Name = "form_productionstaff";
+            this.Name = "frmproductionstaff";
             this.Text = "Production Staff";
             this.Load += new System.EventHandler(this.productionstaff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductionstaff)).EndInit();

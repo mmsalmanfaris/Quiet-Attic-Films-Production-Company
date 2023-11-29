@@ -1,6 +1,6 @@
 ﻿namespace Quiet_Attic_Films_Production_Company
 {
-    partial class form_production
+    partial class frmproduction
     {
         /// <summary>
         /// Required designer variable.
@@ -59,6 +59,7 @@
             this.dgvproduction.RowTemplate.Height = 24;
             this.dgvproduction.Size = new System.Drawing.Size(642, 430);
             this.dgvproduction.TabIndex = 33;
+            this.dgvproduction.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproduction_CellDoubleClick);
             // 
             // panel1
             // 
@@ -96,6 +97,7 @@
             this.btndelete.TabIndex = 8;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnupdate
             // 
@@ -110,6 +112,7 @@
             this.btnupdate.TabIndex = 7;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnnew
             // 
@@ -124,6 +127,7 @@
             this.btnnew.TabIndex = 6;
             this.btnnew.Text = "New";
             this.btnnew.UseVisualStyleBackColor = false;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // cmbproductiontypeid
             // 
@@ -140,9 +144,9 @@
             this.label3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(29, 320);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 30);
+            this.label3.Size = new System.Drawing.Size(194, 38);
             this.label3.TabIndex = 27;
-            this.label3.Text = "Production Type Id";
+            this.label3.Text = "Production Type ";
             // 
             // txtproductiontitle
             // 
@@ -176,6 +180,7 @@
             this.btnsave.TabIndex = 5;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // cmbmanagerid
             // 
@@ -193,9 +198,9 @@
             this.label2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 411);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 30);
+            this.label2.Size = new System.Drawing.Size(118, 38);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Manager Id";
+            this.label2.Text = "Manager ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cmbclientid
@@ -213,9 +218,9 @@
             this.label5.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(29, 505);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 30);
+            this.label5.Size = new System.Drawing.Size(78, 38);
             this.label5.TabIndex = 36;
-            this.label5.Text = "Client Id";
+            this.label5.Text = "Client";
             // 
             // txtnumberofdays
             // 
@@ -235,7 +240,7 @@
             this.label6.TabIndex = 38;
             this.label6.Text = "Number of Days";
             // 
-            // form_production
+            // frmproduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,7 +262,7 @@
             this.Controls.Add(this.txtproductiontitle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnsave);
-            this.Name = "form_production";
+            this.Name = "frmproduction";
             this.Text = "production";
             this.Load += new System.EventHandler(this.production_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproduction)).EndInit();

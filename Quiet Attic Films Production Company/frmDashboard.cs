@@ -30,7 +30,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void button7_Click(object sender, EventArgs e)
         {
-            form_property property_form = new form_property();
+            frmproperty property_form = new frmproperty();
             property_form.ShowDialog();
         }
 
@@ -43,7 +43,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void button5_Click(object sender, EventArgs e)
         {
-            form_staff staff_form = new form_staff();
+            frmstaff staff_form = new frmstaff();
             staff_form.ShowDialog();
         }
 
@@ -55,7 +55,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void button4_Click(object sender, EventArgs e)
         {
-            form_production production_form = new form_production();
+            frmproduction production_form = new frmproduction();
             production_form.ShowDialog();
         }
 
@@ -73,7 +73,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void button11_Click(object sender, EventArgs e)
         {
-            form_productionstaff productionstaff_form = new form_productionstaff();
+            frmproductionstaff productionstaff_form = new frmproductionstaff();
             productionstaff_form.ShowDialog();
         }
 

@@ -16,7 +16,7 @@ namespace Quiet_Attic_Films_Production_Company
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmpropertytype());
+            Application.Run(new frmproductionstaff());
         }
     }
 }

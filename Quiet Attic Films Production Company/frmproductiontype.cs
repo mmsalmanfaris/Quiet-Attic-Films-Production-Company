@@ -25,11 +25,11 @@ namespace Quiet_Attic_Films_Production_Company
         {
             try
             {
-                string type = txtpropertytype.Text.Trim();
+                string type = txtproductiontype.Text.Trim();
                 string description = txtdescription.Text.Trim();
 
 
-                string qry = "INSERT INTO Property_Type (Property_Type, Proptype_Description) VALUES('" + type + "','" + description + "')";
+                string qry = "INSERT INTO Production_Type (Production_Type, Prodtype_Description) VALUES('" + type + "','" + description + "')";
 
                 con.Open();
                 SqlCommand cmd = new SqlCommand(qry, con);
@@ -56,14 +56,14 @@ namespace Quiet_Attic_Films_Production_Company
         {
             try
             {
-                string qry = "SELECT * FROM Property_Type";
+                string qry = "SELECT * FROM Production_Type";
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(qry, con);
                 da.Fill(dt);
-                dgvpropertytype.DataSource = dt;
+                dgvproductiontype.DataSource = dt;
 
-                dgvpropertytype.Columns[0].Width = 50;
-                dgvpropertytype.Columns[1].Width = 80;
+                dgvproductiontype.Columns[0].Width = 50;
+                dgvproductiontype.Columns[1].Width = 80;
 
             }
             catch (SqlException exex)
@@ -84,10 +84,10 @@ namespace Quiet_Attic_Films_Production_Company
             {
                 if (MessageBox.Show("Do you want to update", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string qry = "UPDATE Property_Type SET " +
-                        "Property_Type = '" + txtpropertytype.Text.Trim() + "'," +
-                        "Location_Address = '" + txtdescription.Text.Trim() + "'" +
-                        "WHERE Property_Type_id = " + id;
+                    string qry = "UPDATE Production_Type SET " +
+                        "Production_Type = '" + txtproductiontype.Text.Trim() + "'," +
+                        "Prodtype_Description = '" + txtdescription.Text.Trim() + "'" +
+                        "WHERE Production_Type_id = " + id;
 
                     con.Open();
                     SqlCommand cmd = new SqlCommand(qry, con);
@@ -115,7 +115,7 @@ namespace Quiet_Attic_Films_Production_Company
 
                 if (MessageBox.Show("Do you want to delete", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string qry = "DELETE FROM Location WHERE Location_id = " + id;
+                    string qry = "DELETE FROM Production_Type WHERE Production_Type_id = " + id;
                     con.Open();
                     SqlCommand cmd = new SqlCommand(qry, con);
                     cmd.ExecuteNonQuery();
@@ -138,16 +138,16 @@ namespace Quiet_Attic_Films_Production_Company
         {
             try
             {
-                id = dgvpropertytype.Rows[e.RowIndex].Cells[0].Value.ToString();
+                id = dgvproductiontype.Rows[e.RowIndex].Cells[0].Value.ToString();
 
-                string qry = "SELECT * FROM Property_Type WHERE Property_Type_id = " + id;
+                string qry = "SELECT * FROM Production_Type WHERE Production_Type_id = " + id;
                 con.Open();
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader rdr = cmd.ExecuteReader();
 
                 if (rdr.Read())
                 {
-                    txtpropertytype.Text = rdr[1].ToString();
+                    txtproductiontype.Text = rdr[1].ToString();
                     txtdescription.Text = rdr[2].ToString();
                 }
                 btnsave.Enabled = false;

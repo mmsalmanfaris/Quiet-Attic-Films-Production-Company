@@ -95,8 +95,7 @@ namespace Quiet_Attic_Films_Production_Company
             {
                 if (MessageBox.Show("Do you want to update", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string qry = "UPDATE Client SET " +
-                        "Client_Name = '" + txtclientname.Text.Trim() + "'," +
+                    string qry = "UPDATE Client SET Client_Name = '" + txtclientname.Text.Trim() + "'," +
                         "Client_Phone_no = '" + txtclientphoneno.Text.Trim() + "'" +
                         "WHERE Client_id = " + id;
                     
