@@ -1,6 +1,6 @@
 ﻿namespace Quiet_Attic_Films_Production_Company
 {
-    partial class form_staff_type
+    partial class frmstafftype
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvstafftype = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnnew = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.txt_username = new System.Windows.Forms.TextBox();
+            this.txtcostperday = new System.Windows.Forms.TextBox();
+            this.txtstafftype = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_login = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnsave = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvstafftype)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvstafftype
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(297, 135);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(374, 207);
-            this.dataGridView1.TabIndex = 33;
+            this.dgvstafftype.BackgroundColor = System.Drawing.Color.White;
+            this.dgvstafftype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvstafftype.Location = new System.Drawing.Point(297, 135);
+            this.dgvstafftype.Name = "dgvstafftype";
+            this.dgvstafftype.RowHeadersWidth = 51;
+            this.dgvstafftype.RowTemplate.Height = 24;
+            this.dgvstafftype.Size = new System.Drawing.Size(374, 207);
+            this.dgvstafftype.TabIndex = 33;
+            this.dgvstafftype.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvstafftype_CellDoubleClick);
             // 
             // panel1
             // 
@@ -77,47 +78,50 @@
             this.label4.Text = " Staff Type Form";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(520, 388);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 52);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndelete.Location = new System.Drawing.Point(520, 388);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(149, 52);
+            this.btndelete.TabIndex = 5;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(352, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 52);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnupdate.Location = new System.Drawing.Point(352, 388);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(151, 52);
+            this.btnupdate.TabIndex = 4;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // button1
+            // btnnew
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(199, 388);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 52);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnew.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.ForeColor = System.Drawing.Color.White;
+            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnnew.Location = new System.Drawing.Point(199, 388);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.Size = new System.Drawing.Size(133, 52);
+            this.btnnew.TabIndex = 3;
+            this.btnnew.Text = "New";
+            this.btnnew.UseVisualStyleBackColor = false;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // label2
             // 
@@ -129,22 +133,21 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Cost Per Day";
             // 
-            // txt_password
+            // txtcostperday
             // 
-            this.txt_password.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.Location = new System.Drawing.Point(35, 276);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(216, 33);
-            this.txt_password.TabIndex = 1;
-            this.txt_password.UseSystemPasswordChar = true;
+            this.txtcostperday.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcostperday.Location = new System.Drawing.Point(35, 276);
+            this.txtcostperday.Name = "txtcostperday";
+            this.txtcostperday.Size = new System.Drawing.Size(216, 33);
+            this.txtcostperday.TabIndex = 1;
             // 
-            // txt_username
+            // txtstafftype
             // 
-            this.txt_username.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_username.Location = new System.Drawing.Point(35, 168);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(216, 33);
-            this.txt_username.TabIndex = 0;
+            this.txtstafftype.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtstafftype.Location = new System.Drawing.Point(35, 168);
+            this.txtstafftype.Name = "txtstafftype";
+            this.txtstafftype.Size = new System.Drawing.Size(216, 33);
+            this.txtstafftype.TabIndex = 0;
             // 
             // label1
             // 
@@ -156,39 +159,41 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Staff Type";
             // 
-            // btn_login
+            // btnsave
             // 
-            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_login.Location = new System.Drawing.Point(33, 388);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(145, 52);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Save";
-            this.btn_login.UseVisualStyleBackColor = false;
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsave.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.Location = new System.Drawing.Point(33, 388);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(145, 52);
+            this.btnsave.TabIndex = 2;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
-            // form_staff_type
+            // frmstafftype
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(701, 464);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvstafftype);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btnnew);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.txt_username);
+            this.Controls.Add(this.txtcostperday);
+            this.Controls.Add(this.txtstafftype);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_login);
-            this.Name = "form_staff_type";
+            this.Controls.Add(this.btnsave);
+            this.Name = "frmstafftype";
             this.Text = "staff_type";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmstafftype_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvstafftype)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -198,16 +203,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvstafftype;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.TextBox txt_username;
+        private System.Windows.Forms.TextBox txtcostperday;
+        private System.Windows.Forms.TextBox txtstafftype;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btnsave;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Quiet_Attic_Films_Production_Company
 {
-    partial class form_production_type
+    partial class frmproductiontype
     {
         /// <summary>
         /// Required designer variable.
@@ -53,6 +53,7 @@
             this.dgvproductiontype.RowTemplate.Height = 24;
             this.dgvproductiontype.Size = new System.Drawing.Size(384, 113);
             this.dgvproductiontype.TabIndex = 1;
+            this.dgvproductiontype.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproductiontype_CellDoubleClick);
             // 
             // panel1
             // 
@@ -90,6 +91,7 @@
             this.btndelete.TabIndex = 5;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnupdate
             // 
@@ -104,6 +106,7 @@
             this.btnupdate.TabIndex = 4;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnnew
             // 
@@ -118,6 +121,7 @@
             this.btnnew.TabIndex = 3;
             this.btnnew.Text = "New";
             this.btnnew.UseVisualStyleBackColor = false;
+            this.btnnew.Click += new System.EventHandler(this.btnnew_Click);
             // 
             // txtproductiontype
             // 
@@ -150,6 +154,7 @@
             this.btnsave.TabIndex = 2;
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtdescription
             // 
@@ -169,7 +174,7 @@
             this.label2.TabIndex = 44;
             this.label2.Text = "Description";
             // 
-            // form_production_type
+            // frmproductiontype
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -185,7 +190,7 @@
             this.Controls.Add(this.txtproductiontype);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnsave);
-            this.Name = "form_production_type";
+            this.Name = "frmproductiontype";
             this.Text = "Production Type";
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductiontype)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -120,7 +120,7 @@ namespace Quiet_Attic_Films_Production_Company
             {
                 id = dgvlocation.Rows[e.RowIndex].Cells[0].Value.ToString();
 
-                string qry = "SELECT * FROM Client WHERE Location_id = " + id;
+                string qry = "SELECT * FROM Location WHERE Location_id = " + id;
                 con.Open();
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader rdr = cmd.ExecuteReader();
@@ -174,6 +174,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void frmlocation_Load(object sender, EventArgs e)
         {
-            myFillGridDetail();        }
+            myFillGridDetail();        
+        }
     }
 }
