@@ -1,6 +1,6 @@
 ﻿namespace Quiet_Attic_Films_Production_Company
 {
-    partial class form_propertylocation
+    partial class frmpropertylocation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmblocationid = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbpropertyid = new System.Windows.Forms.ComboBox();
+            this.dgvpropertylocation = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnnew = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_login = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnsave = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpropertylocation)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // cmblocationid
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(269, 169);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(175, 33);
-            this.comboBox2.TabIndex = 1;
+            this.cmblocationid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmblocationid.FormattingEnabled = true;
+            this.cmblocationid.Location = new System.Drawing.Point(269, 169);
+            this.cmblocationid.Name = "cmblocationid";
+            this.cmblocationid.Size = new System.Drawing.Size(175, 33);
+            this.cmblocationid.TabIndex = 1;
             // 
             // label2
             // 
@@ -62,25 +62,27 @@
             this.label2.TabIndex = 63;
             this.label2.Text = "Location Id";
             // 
-            // comboBox1
+            // cmbpropertyid
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(60, 169);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 33);
-            this.comboBox1.TabIndex = 0;
+            this.cmbpropertyid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbpropertyid.FormattingEnabled = true;
+            this.cmbpropertyid.Location = new System.Drawing.Point(60, 169);
+            this.cmbpropertyid.Name = "cmbpropertyid";
+            this.cmbpropertyid.Size = new System.Drawing.Size(173, 33);
+            this.cmbpropertyid.TabIndex = 0;
+            this.cmbpropertyid.SelectedIndexChanged += new System.EventHandler(this.txtpropertyid_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // dgvpropertylocation
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 239);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(384, 182);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvpropertylocation.BackgroundColor = System.Drawing.Color.White;
+            this.dgvpropertylocation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvpropertylocation.Location = new System.Drawing.Point(60, 239);
+            this.dgvpropertylocation.Name = "dgvpropertylocation";
+            this.dgvpropertylocation.RowHeadersWidth = 51;
+            this.dgvpropertylocation.RowTemplate.Height = 24;
+            this.dgvpropertylocation.Size = new System.Drawing.Size(384, 182);
+            this.dgvpropertylocation.TabIndex = 3;
+            this.dgvpropertylocation.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // panel1
             // 
@@ -105,47 +107,48 @@
             this.label4.Text = "Property Location";
             this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(269, 533);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 52);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndelete.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.Color.White;
+            this.btndelete.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndelete.Location = new System.Drawing.Point(269, 533);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(175, 52);
+            this.btndelete.TabIndex = 5;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(57, 533);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 52);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnupdate.Location = new System.Drawing.Point(57, 533);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(176, 52);
+            this.btnupdate.TabIndex = 4;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnnew
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(269, 460);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 52);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnnew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnew.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnew.ForeColor = System.Drawing.Color.White;
+            this.btnnew.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnnew.Location = new System.Drawing.Point(269, 460);
+            this.btnnew.Name = "btnnew";
+            this.btnnew.Size = new System.Drawing.Size(175, 52);
+            this.btnnew.TabIndex = 3;
+            this.btnnew.Text = "New";
+            this.btnnew.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -158,39 +161,41 @@
             this.label1.Text = "Property Id";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btn_login
+            // btnsave
             // 
-            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_login.Location = new System.Drawing.Point(57, 460);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(176, 52);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Save";
-            this.btn_login.UseVisualStyleBackColor = false;
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnsave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsave.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsave.Location = new System.Drawing.Point(57, 460);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(176, 52);
+            this.btnsave.TabIndex = 2;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // form_propertylocation
+            // frmpropertylocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(498, 633);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmblocationid);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cmbpropertyid);
+            this.Controls.Add(this.dgvpropertylocation);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btnnew);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_login);
-            this.Name = "form_propertylocation";
+            this.Controls.Add(this.btnsave);
+            this.Name = "frmpropertylocation";
             this.Text = "Property Location";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.form_propertylocation_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpropertylocation)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -200,16 +205,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmblocationid;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbpropertyid;
+        private System.Windows.Forms.DataGridView dgvpropertylocation;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btnnew;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btnsave;
     }
 }

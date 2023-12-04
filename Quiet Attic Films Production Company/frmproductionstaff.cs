@@ -32,13 +32,11 @@ namespace Quiet_Attic_Films_Production_Company
         {
             try
             {
-                int production = 1 + cmbproductionid.SelectedIndex;
-                int staff = 1 + cmbstaffid.SelectedIndex;
+                int production = 1 + int.Parse(cmbproductionid.SelectedIndex.ToString());
+                int staff = 1 + int.Parse(cmbstaffid.SelectedIndex.ToString());
 
 
-                string qry = "INSERT INTO Production_Staff " +
-                    "(Production_id, Staff_id) VALUES" +
-                    "('" + production + "','" + staff + "')";
+                string qry = "INSERT INTO Production_Staff (Production_id, Staff_id) VALUES ('" + production + "','" + staff + "')";
 
                 con.Open();
                 SqlCommand cmd = new SqlCommand(qry, con);

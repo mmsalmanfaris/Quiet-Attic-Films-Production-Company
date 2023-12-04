@@ -76,6 +76,7 @@ namespace Quiet_Attic_Films_Production_Company
         {
             txtproductiontype.Text = "";
             txtdescription.Text = "";
+            btnsave.Enabled = true;
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
@@ -163,6 +164,11 @@ namespace Quiet_Attic_Films_Production_Company
             {
                 con.Close();
             }
+        }
+
+        private void frmproductiontype_Load(object sender, EventArgs e)
+        {
+            myFillGridDetail();
         }
     }
 }

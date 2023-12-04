@@ -14,7 +14,7 @@ namespace Quiet_Attic_Films_Production_Company
     public partial class frmproduction : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=SALMAN_FARIS\SQLEXPRESS;Initial Catalog=Quiet_Attic_Films;Integrated Security=True");
-        string id = string.Empty;
+        string id = "";
 
         public frmproduction()
         {
@@ -49,9 +49,9 @@ namespace Quiet_Attic_Films_Production_Company
                 string title = txtproductiontitle.Text.Trim();
                 string stringdays = txtnumberofdays.Text.Trim();
                 int days = int.Parse(stringdays);
-                int type = 1 + cmbproductiontypeid.SelectedIndex;
-                int manager = 1 + cmbmanagerid.SelectedIndex;
-                int client = 1 + cmbclientid.SelectedIndex;
+                int type = int.Parse(cmbproductiontypeid.SelectedValue.ToString());
+                int manager = int.Parse(cmbmanagerid.SelectedValue.ToString());
+                int client = int.Parse(cmbclientid.SelectedValue.ToString());
 
 
                 string qry = "INSERT INTO Production " +
@@ -91,6 +91,9 @@ namespace Quiet_Attic_Films_Production_Company
 
                 dgvproduction.Columns[0].Width = 50;
                 dgvproduction.Columns[1].Width = 80;
+                dgvproduction.Columns[2].Width = 80;
+                dgvproduction.Columns[3].Width = 80;
+                dgvproduction.Columns[4].Width = 80;
 
             }
             catch (SqlException exex)
@@ -111,7 +114,7 @@ namespace Quiet_Attic_Films_Production_Company
                         "Production_Type_id = '" + cmbproductiontypeid.SelectedIndex + "'," +
                         "Manager_id = '" + cmbmanagerid.SelectedIndex + "'," +
                         "Client_id = '" + cmbclientid.SelectedIndex + "'" +
-                        "WHERE Property_id = " + id;
+                        "WHERE Production_id = " + id;
 
                     con.Open();
                     SqlCommand cmd = new SqlCommand(qry, con);

@@ -192,6 +192,7 @@
             this.Controls.Add(this.btnsave);
             this.Name = "frmproductiontype";
             this.Text = "Production Type";
+            this.Load += new System.EventHandler(this.frmproductiontype_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductiontype)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

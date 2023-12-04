@@ -176,5 +176,32 @@ namespace Quiet_Attic_Films_Production_Company
             cmbstafftype.ValueMember = "Staff_Type_id";
             cmbstafftype.DataSource = dt;
         }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                if (MessageBox.Show("Do you want to delete", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string qry = "DELETE FROM Staff WHERE Staff_id = " + id;
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(qry, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Delete Successfully", "Delete Operation");
+                    btnnew.PerformClick();
+                    myFillGridDetail();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }

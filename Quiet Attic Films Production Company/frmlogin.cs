@@ -62,17 +62,24 @@ namespace Quiet_Attic_Films_Production_Company
 
                     if (rdr.Read())
                     {
+                        MessageBox.Show("Login Success");
+
                         frmdashboard formmain = new frmdashboard();
                         formmain.ShowDialog();
                         this.Hide();
                     }
                     else
+                    {
                         MessageBox.Show("Incorrect Username or Password");
+                    }
+                        
                 }
                 else
-                    MessageBox.Show("Incorrect Username or Password");
-            }
+                {
+                    MessageBox.Show("Username or Password Empty");
+                }
 
+            }
             catch (Exception ex)
             {
 

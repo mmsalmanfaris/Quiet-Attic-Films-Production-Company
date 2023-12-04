@@ -85,7 +85,7 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void button13_Click(object sender, EventArgs e)
         {
-            form_propertylocation propertylocation_form = new form_propertylocation();
+            frmpropertylocation propertylocation_form = new frmpropertylocation();
             propertylocation_form.ShowDialog();
         }
 
@@ -95,6 +95,11 @@ namespace Quiet_Attic_Films_Production_Company
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmdashboard_Load(object sender, EventArgs e)
         {
 
         }
