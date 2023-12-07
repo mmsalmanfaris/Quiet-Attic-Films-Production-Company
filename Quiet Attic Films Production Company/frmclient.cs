@@ -28,34 +28,42 @@ namespace Quiet_Attic_Films_Production_Company
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            try
+            if (txtclientname.Text != "" && txtclientphoneno.Text != "")
             {
-                string name = txtclientname.Text.Trim();
-                string stringphoneno = txtclientphoneno.Text.Trim();
-                int phoneno = int.Parse(stringphoneno);
+                try
+                {
+                    string name = txtclientname.Text.Trim();
+                    string stringphoneno = txtclientphoneno.Text.Trim();
+                    int phoneno = int.Parse(stringphoneno);
 
 
-                string qry = "INSERT INTO Client (Client_Name, Client_Phone_no) VALUES('" + name + "','" + phoneno + "')";
+                    string qry = "INSERT INTO Client (Client_Name, Client_Phone_no) VALUES('" + name + "','" + phoneno + "')";
 
-                con.Open();
-                SqlCommand cmd = new SqlCommand(qry, con);
-                cmd.ExecuteNonQuery();
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(qry, con);
+                    cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Saved Successfully");
+                    MessageBox.Show("Saved Successfully");
 
-                btnnew.PerformClick();
+                    btnnew.PerformClick();
 
-                myFillGridDetail();
+                    myFillGridDetail();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Name or Phone No is Empty");
             }
-            finally
-            {
-                con.Close();
-            }
+
         }
 
         void myFillGridDetail()

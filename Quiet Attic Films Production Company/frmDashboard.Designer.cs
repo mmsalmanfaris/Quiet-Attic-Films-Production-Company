@@ -379,7 +379,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmdashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "4";
+            this.Text = "Form Dashboard";
             this.Load += new System.EventHandler(this.frmdashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
