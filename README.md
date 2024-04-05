@@ -16,6 +16,7 @@ This system serves as a comprehensive data management tool tailored for film pro
 
    
 ## Entity Relationship Diagram
+
 ![ER diagram for quiet attic films production company](https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company/assets/110341513/72f51998-3538-4884-8709-6bfa44cfae6b)
 
 
@@ -26,20 +27,29 @@ This system serves as a comprehensive data management tool tailored for film pro
 - **IDE**: Visual Studio (Windows Form . NET Framwork)
 
 
-## Main Features
-
-- **Data Management**: Allows users to view, assign, insert, update, and delete data pertaining to different entities within the film production company.
-- **SSMS Integration**: Seamlessly connects to the SQL Server Management Studio (SSMS) database for robust data storage and retrieval.
-
 ## Getting Started
 
 To begin using the Quiet Attic Films Production Company Data Management System, follow these steps:
 
 1. **Clone Repository**: Open CMD on your local machine and past the link.
-   ``git clone https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company.git``
-3. **Set Up Database**: Ensure that the SSMS database is set up and configured properly.
-4. **Configure System**: Modify any necessary configuration files to tailor the system to your specific requirements.
-5. **Run Application**: Execute the application to start utilizing its features.
+   
+   ```
+   git clone https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company.git
+   ```
+2. **Navigate to the project directory**:
+   
+   ```
+   cd Quiet-Attic-Films-Production-Company
+   ```
+4. **Set Up Database**: Ensure that the SSMS database is set up and configured properly (Not included).
+5. **Configure System**: Modify any necessary configuration files to tailor the system to your specific requirements on (Visual Studio).
+6. **Run Application**: Execute the application to start utilizing its features.
+
+
+## Wireframes of the system interface 
+
+![Wireframe of quiet attic film production company](https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company/assets/110341513/65e81bff-fbad-4601-91e5-f9e0a4ba74f2)
+
 
 > [!NOTE]
 > Need more documentation for thsi systme, drop a message via [linkedin](https://www.linkedin.com/in/mmsalmanfaris/)
