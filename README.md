@@ -24,7 +24,7 @@ This system serves as a comprehensive data management tool tailored for film pro
 
 - **Development Approach**: The system was developed in C# without utilizing the Object-Oriented Programming (OOP) concept.
 - **Database**: SQL Server Management Studio (SSMS) database.
-- **IDE**: Visual Studio (Windows Form . NET Framwork)
+- **IDE**: Visual Studio (Windows Form . NET Framework)
 
 
 ## Getting Started
@@ -52,7 +52,7 @@ To begin using the Quiet Attic Films Production Company Data Management System, 
 
 
 > [!NOTE]
-> Need more documentation for thsi systme, drop a message via [linkedin](https://www.linkedin.com/in/mmsalmanfaris/)
+> Need more documentation for this system, drop a message via [linkedin](https://www.linkedin.com/in/mmsalmanfaris/)
 
 ## Credits: 
 This project was created by [mmsalmanfaris](https://www.linkedin.com/in/mmsalmanfaris/), licensed under the [MIT License](LICENSE), Feel free to customize.
