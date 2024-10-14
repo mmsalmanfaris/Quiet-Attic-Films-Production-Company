@@ -19,6 +19,14 @@ This system serves as a comprehensive data management tool tailored for film pro
 
 ![ER diagram for quiet attic films production company](https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company/assets/110341513/72f51998-3538-4884-8709-6bfa44cfae6b)
 
+## Logical Mapping
+
+![Logical Mapping Correction](https://github.com/user-attachments/assets/d74695d9-cc6e-4de5-9e9e-e58dfbaea80c)
+
+## Class Diagram
+
+![image](https://github.com/user-attachments/assets/d933329d-1b81-420f-90d2-8b1164de6300)
+
 
 ## Development Information
 
@@ -31,7 +39,7 @@ This system serves as a comprehensive data management tool tailored for film pro
 
 To begin using the Quiet Attic Films Production Company Data Management System, follow these steps:
 
-1. **Clone Repository**: Open CMD on your local machine and past the link.
+1. **Clone Repository**: Open CMD on your local machine and paste the link.
    
    ```
    git clone https://github.com/mmsalmanfaris/Quiet-Attic-Films-Production-Company.git
@@ -43,7 +51,7 @@ To begin using the Quiet Attic Films Production Company Data Management System, 
    ```
 4. **Set Up Database**: Ensure that the SSMS database is set up and configured properly (Not included).
 5. **Configure System**: Modify any necessary configuration files to tailor the system to your specific requirements on (Visual Studio).
-6. **Run Application**: Execute the application to start utilizing its features.
+6. **Run Application**: Execute the application to utilise its features.
 
 
 ## Wireframes of the system interface 
